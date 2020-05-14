@@ -1,0 +1,40 @@
+#page-heading{
+    color: peru
+    }
+
+p{
+    text-transform: uppercase;
+}
+
+ #page-heading{
+     text-decoration:underline;
+     font-style:italic;
+       }
+
+.btn-success{
+
+width:100px;
+height:30px:
+text-align: center;
+border:1px dotted  green;
+border-raius:5px;
+box-shadow:3px 3px green;
+color :green;
+}
+
+ul{
+    border:1px solid black
+
+}
+ li{
+     border :1px solid blue;
+     list-style : none;
+     font-weight: bold;
+     border-radius ; 5 px;
+     padding:10px;
+     }
+     
+     #first-li {
+         text-transform: uppercase;
+         color:magenta;
+     }
