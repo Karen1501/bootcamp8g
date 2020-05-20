@@ -1,0 +1,54 @@
+*{
+    font-style: italic;
+    padding: 15px;
+}
+
+body,html{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    margin: 0;
+}
+
+header{
+    background: cyan;
+    }
+
+header nav{
+    background: purple;
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+  header nav a{
+      color: white;
+      background: lightgray;
+      color: #333333;
+      flex-grow: 1;
+
+  }
+.contenedor-flexible{
+    display: flex;
+    }
+.contenedor-flexible-section{
+    background: blue;
+    flex-grow: 2;
+    margin-right: 15px;
+}
+
+section article{
+   background: pink;
+}
+}
+
+.contenedor-flexible aside{
+    background: salmon;
+    flex-grow: 1;
+}
+footer{
+    background: slategrey;
+}
