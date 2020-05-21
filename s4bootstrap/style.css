@@ -1,0 +1,22 @@
+.container header{
+  background-color: aqua;
+
+  }
+.container nav{
+  background-color: rgb(219, 90, 202);
+  }
+
+.container1 section{
+  background-color: cornflowerblue;
+}
+.container1 article{
+  background-color: rgb(236, 98, 105);
+}
+.container1 aside{
+  background-color: plum;  
+}
+.container2 footer{
+  background-color: rgb(128, 155, 238);
+  border-color: rgb(23, 61, 175);
+}
+  
