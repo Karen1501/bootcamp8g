@@ -21,5 +21,7 @@ console.log("Es un rectángulo")
 var numeroDeLados = 10
 if (numeroDeLados === 4)
     console.log("La figura es un cuadrado")
+else if (numeroDeLados === 5)
+    console.log("la figura es un pentágono")
 else(numeroDeLados > 5)
 console.log("La figura tiene muchos lados")
