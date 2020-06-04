@@ -33,7 +33,7 @@ const getUserString = () => {
         input -> 24
         output -> "2, 2, 2, 3"
         */
-
+/*
 const count_input = string => string.trim().replace(',', ' ').split(' ').length;
 const get_number = () => {
     let number = prompt("Ingresa un numero")
@@ -95,3 +95,32 @@ const get_prime_factor = (number, arrayPrimeNumbers) => {
 }
 const get_first_number = numberArr => numberArr[0]
 console.log(get_number());
+*/
+
+
+var primeNumbers = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47]
+var primeFactors;
+var primeCounter;
+var originalNumber;
+var primeNumber;
+const findPrimeFactors = () => {
+    primeFactors = [];
+    primeCounter = 0;
+    originalNumber = parseInt(prompt("Ingresa un número"))
+    primeNumber = primeNumbers[primeCounter]; /*aquí prime counter vale 0*/
+    checkIfIsFactor(originalNumber, primeNumber)
+}
+const checkIfIsFactor = (originalNumber, primeNumber) => {
+    if (originalNumber / primeNumber === 1) { /*Salida temprana*/
+        primeFactors.push(primeNumber);
+        alert(primeFactors.join(", "))
+    } else if (originalNumber % primeNumber === 0) { /*revisamos si el númerooriginal es divisible entre el factor*/
+        primeFactors.push(primeNumber);
+        originalNumber /= primeNumber;
+        checkIfIsFactor(originalNumber, primeNumber)
+    } else {
+        primeCounter++
+        primeNumber = primeNumbers[primeCounter] /*seleccionamos el siguiente factor primo*/
+        checkIfIsFactor(originalNumber, primeNumber)
+    }
+}
