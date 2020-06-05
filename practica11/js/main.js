@@ -48,7 +48,7 @@ por cada auto extraído, mostrar al usuario un mensaje que diga
 
 
 
-
+/*
 
 
 cars = [{
@@ -103,4 +103,31 @@ const showCars = () => {
     filterCars.forEach(element => {
         console.log(element)
     })
-}
+} */
+
+var carsData = [
+    [
+        "2010",
+        "Toyota",
+        "Supra",
+        "300"
+    ],
+    [
+        "2015",
+        "Mazda",
+        "RX7",
+        "350"
+    ],
+    [
+        "2015",
+        "Nissan",
+        "Skyline",
+        "300"
+    ]
+]
+var collection = carsData.map(car => )
+let objectCar = car.map((car) => {
+    let [year, maker, model, hp] = car
+    return { year, maker, model, hp }
+
+})
