@@ -51,7 +51,7 @@ por cada auto extraído, mostrar al usuario un mensaje que diga
 
 
 
-var cars = [{
+cars = [{
         year: "2000",
         maker: "Toyota",
         model: "Corolla",
@@ -94,17 +94,13 @@ var cars = [{
         hp: "200"
     }
 ]
+const showCars = () => {
+    let userRequire = parseInt(prompt("Escribe un año"))
+    let filterCars = cars.filter((car, index) => {
+        return parseInt(car.year) >= userRequire
 
-
-
-const carsFiltered = () => {
-        var year = prompt("Escribe un año")
-        var filter = cars.filter(car => cars.year < year)
-        return filter
-
-
-        var autos = cars.map(function(car, index) {
-            console.log(index + " " + "fabricante del auto" + " " + car.maker + " " + "nombre del auto" + " " + car.model + " " + "del año" + " " + car.year + " " + "con" + " " + car.hp + " " + "caballos de fuerza")
-
-        })
-    } //después de esto, me atoré
+    })
+    filterCars.forEach(element => {
+        console.log(element)
+    })
+}
