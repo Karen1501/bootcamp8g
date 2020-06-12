@@ -40,15 +40,21 @@ function Mentor(name, age, skills) {
     this.name = name;
     this.age = age;
     this.skills = skills;
-    console.log(this.skills)
+    this.showAverage = function() {
+        let { javascript, css, jquery, node } = this.skills[0]
+        let average = (javascript + css + jquery + node) / 4;
+        return average;
+    }
 }
+var mentorsCollection = mentors.map((mentor, index) => {
 
-
-const mentorObject = mentors.map((mentors) => {
-        let { name, age, skills } = mentors
-        return new Mentor(name, age, skills)
-    })
-    //me falta esto
-const averageSkills = mentorObject.reduce((sumaSkills, nodes, index) => {
-    console.log(sumaSkills)
+    return new Mentor(mentor.name, mentor.age, mentor.skills)
 })
+
+/*
+const mentorObject = mentors.map((mentors) => {
+    let { name, age, skills } = mentors
+    return new Mentor(name, age, skills)
+
+})
+*/
